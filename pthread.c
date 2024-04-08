@@ -31,7 +31,11 @@ void readFile() {
 
 float find_avg(char* line, int nchars) {
     // calculate average character value
-    return 0.0;
+    int sum = 0;
+    for (int i = 0; i < nchars; i++) {
+        sum += (unsigned char)line[i];
+    }
+    return nchars > 0 ? (float)sum / nchars : 0.0;
 }
 
 void *count_array(void *arg) {
