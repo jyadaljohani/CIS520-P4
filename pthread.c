@@ -16,7 +16,7 @@ FILE *fd;
 
 void readFile() {
     int err, i;
-    fd = fopen("/path/to/data/wiki_dump.txt", "r");
+    fd = fopen("wiki_dump.txt", "r");
     if (fd == NULL) {
         perror("Error opening file");
         return;
@@ -98,6 +98,6 @@ int main() {
 
     //Add performance analysis
     printf("Main: May be a Completed successfully. Exiting.\n");
-
+	
     return 0;
 }
