@@ -16,7 +16,7 @@ FILE *fd;
 
 void readFile() {
     int err, i;
-    fd = fopen("wiki_dump.txt", "r");
+    fd = fopen("/homes/dan/625/wiki_dump.txt", "r");
     if (fd == NULL) {
         perror("Error opening file");
         return;
