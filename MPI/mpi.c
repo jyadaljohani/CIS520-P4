@@ -79,6 +79,7 @@ int main(int argc, char *argv[]) {
     FILE *fp;
     MPI_Status Status;
     processMem_t myMem;
+    char tempBuffer[STRING_SIZE]; // avoid undeclared error
 
     rc = MPI_Init(&argc, &argv);
     if (rc != MPI_SUCCESS) {
